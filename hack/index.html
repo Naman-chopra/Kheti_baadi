@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Kheti-Baadi</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    </head>
+
+    <body id="page-top" >
+        <div id="wrapper">
+            <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+                <div class="container-fluid d-flex flex-column p-0"><a
+                        class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
+                        href="#">
+                        <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-feather-alt"></i></div>
+                        <div class="sidebar-brand-text mx-3"><span>Khetti baadi&nbsp;</span></div>
+                    </a>
+                    <hr class="sidebar-divider my-0">
+                    <ul class="navbar-nav text-light" id="accordionSidebar">
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                    <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0"
+                            id="sidebarToggle" type="button"></button></div>
+                </div>
+            </nav>
+            <div class="d-flex flex-column" id="content-wrapper">
+                <div id="content" style="background-image:url('bg2.jpg'); background-repeat: no-repeat;background-size: cover;">
+                    <div class="container-fluid">
+                        <span style="background-color: black;"><div class="d-sm-flex justify-content-between align-items-center mb-4">
+                            <h2 style="color: white; margin-top: 20px; font-weight:bolder;">Dashboard</h2>
+                        </div>
+
+
+                        <div class="row" id="special">
+                            <div class="col">
+                                <p style="width:80%; height:260px; font-size: xx-large;color: aliceblue; font-weight:bolder;">Welcome,<br> Mr Krishan Kumar...
+                                </p>
+                                <p style="width:80%; height:260px; font-size: xx-large;color: aliceblue ;"> <a href="https://thingspeak.com/channels/1830210" style="color: white; font-weight:bolder;">View analytics (Expert Mode)</a></p>
+                            </div></span>
+
+
+                            <div class="col">
+                                <div id="ww_9649d55a55a05" v='1.3' loc='id'
+                                    style="height: 250px; width:230%; border-radius: 20px;" ;
+                                    a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl2292"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+                                    Weather Data Source: <a href="https://weatherlabs.in/हिंदी/पटियाला_का_मौसम/"
+                                        id="ww_9649d55a55a05_u" target="_blank">वर्तमान मौसम</a></div>
+                                <script async src="https://app1.weatherwidget.org/js/?id=ww_9649d55a55a05"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4" style="width: 23%; margin-left: 2%;">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1">
+                                                <span style="font-size: 18px;">NITROGEN</span>
+                                            </div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="nitrogen"></span></div>
+                                        </div>
+                                        <div class="col-auto"><i
+                                                class="typcn typcn-feather text-secondary fa-2x text-gray-300"
+                                                style="color: var(--bs-gray);border-color: var(--bs-pink);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4" style="width: 23%;">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1">
+                                                <span style="font-size: 18px;">POTASSIUM</span>
+                                            </div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="potassium"></span></div>
+                                        </div>
+                                        <div class="col-auto"><i
+                                                class="typcn typcn-feather text-warning fa-2x text-gray-300"
+                                                style="border-color: var(--bs-pink);"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4"  style="width: 23%;">
+                            <div class="card shadow border-start-info py-2" style="padding-left: 0;">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1">
+                                                <span style="font-size: 18px;">Phosphorous</span>
+                                            </div>
+                                            <div class="row g-0 align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span id='phosphorous' ></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><i
+                                            class="typcn typcn-feather text-warning fa-2x text-gray-300"
+                                            style="border-color: var(--bs-pink);"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4" style="width: 23%;">
+                            <div class="card shadow border-start-warning py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1">
+                                                <span style = "font-weight: bold; font-size: 18px;">Feritlizer&nbsp;</span>
+                                            </div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="fertilizer"></span></div>
+                                        </div>
+                                   
+                                        <div class="col-auto"><i
+                                            class="typcn typcn-feather text-warning fa-2x text-gray-300"
+                                            style="border-color: var(--bs-pink);"></i>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- <div><iframe width="80%" height="260" style="border: 1px solid #cccccc; border-radius: 25px;"
+                src="https://thingspeak.com/channels/1830210/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&xaxis=Time&yaxis=Humidity"></iframe>
+                </div> -->
+                    <div class="row">
+                        <div class="col" id="chart"> <iframe width="80%" height="260"
+                                style="border: 1px solid #cccccc; border-radius: 20px;margin-left: 20px;"
+                                src="https://thingspeak.com/channels/1830210/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&xaxis=Time&yaxis=Humidity"></iframe>
+                        </div>
+                        <div class="col" id="cards">
+                            <div class="col" style="display: inline; width: 40%;">
+                                <div class="row">
+                                    <div class="col" style="width: 100%;">
+                                        <div class="card text-white shadow" style="height:260px; background-color: aqua;">
+                                            <div class="card-body">
+                                                <p class="m-0"><h2 style="font-weight: bolder;">Recommended<br> Irrigation<br> Status...(waiting)</h2><h3><a href="https://t.me/cropsaviour_bot" style="font-weight: bolder;">Diagnose Your crop health with our telegram bot meanwhile</a></h3>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                           
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card text-white  shadow" style="background-color: blue;">
+                                        <div class="card-body">
+                                            <p class="m-0" style="font-size: 20px; font-weight: 30%;"><a
+                                                    href="https://www.amazon.in/Urea-Fertilizers-Nitrogen-Fertilizer-Application/dp/B09TLGR6BV/ref=asc_df_B09TLGR6BV/?tag=googleshopdes-21&linkCode=df0&hvadid=397082356559&hvpos=&hvnetw=g&hvrand=422301912730791891&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9301263&hvtargid=pla-1641046465390&psc=1&ext_vrnc=hi"
+                                                    style="color: white; font-weight: bolder;">Purchase Urea</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card text-white bg-success shadow">
+                                        <div class="card-body">
+                                            <p class="m-0" style="font-size: 20px; font-weight: 30%;"><a
+                                                    href="https://agribegri.com/products/buy-online-npk-fertilizer-202020-water-soluble-fertilizer-5-kg-5-packs-of-1kg.php"
+                                                    style="color: white; font-weight: bolder;">Purchase MPK 20-20</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card text-white bg-info shadow">
+                                        <div class="card-body">
+                                            <p class="m-0" style="font-size: 20px; font-weight: 30%;"><a
+                                                    href="https://agribegri.com/products/forceorg-da-power---ammonium-phosphate--price-of-phosphate.php"
+                                                    style="color: white; font-weight: bolder;">Purchase DAP</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card text-white shadow" style="background-color: purple;">
+                                        <div class="card-body">
+                                            <p class="m-0" style="font-size: 20px; font-weight: 30%;"><a
+                                                    href="https://agribegri.com/products/forceorg-da-power---ammonium-phosphate--price-of-phosphate.php"
+                                                    style="color: white;font-weight: bolder;">Purchase 28 - 28</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/chart.min.js"></script>
+        <script src="assets/js/bs-init.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <footer class="bg-white sticky-footer">
+            <div class="container my-auto">
+                <div class="text-center my-auto copyright"><span>Copyright © Aditya-GOD always</span></div>
+            </div>
+        </footer>
+    </body>
+
+</html>
