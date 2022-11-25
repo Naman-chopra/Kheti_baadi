@@ -39,7 +39,7 @@ fetch("http://127.0.0.1:8000/rain", {
         document.getElementById("rain-rain").innerHTML = "It will Rain soon, watering the crops is not suggested";
     }
     else {
-        document.getElementById("rain-rain").innerHTML = "Give them water!!";
+        document.getElementById("rain-rain").innerHTML = "No Rain Expected, Give them water!!";
         
     }
 
