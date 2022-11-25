@@ -38,10 +38,10 @@ def getFertilizer(request):
     dict={'soil_type':'sandy','temp':10,'crop_type':'maize','nitrogen':10,'potassium':10,'phosphorous':10,'humidity':10,'moisture':10}
     fert=data_from_esp(dict)
     return Response({'fert':fert})
-@api_view(['GET'])
 
+@api_view(['GET'])
 def rainfallStatus(request):
-    api_key = "feb9b2de86f6d578ba83164f3854fdd6"
+    api_key = "d0999d6a4900e7462c6fb77beee9f1e5"
 
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     
@@ -54,7 +54,7 @@ def rainfallStatus(request):
 
     x = response.json()
     x=x['weather']
-    return Response(x['main'])
+    print(x)
+    r=x[0]['main']
+    return Response({'status':r})
     
-
-
